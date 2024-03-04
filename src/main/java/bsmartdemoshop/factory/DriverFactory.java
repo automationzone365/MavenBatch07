@@ -49,14 +49,14 @@ public class DriverFactory {
             case "firefox":
                 WebDriverManager.firefoxdriver().setup();
                 driver=new FirefoxDriver();
-                FirefoxOptions firefoxOptions= new FirefoxOptions();
-                firefoxOptions.addArguments("start-maximized");
+              //  FirefoxOptions firefoxOptions= new FirefoxOptions();
+              //  firefoxOptions.addArguments("start-maximized");
                // driver= new RemoteWebDriver(new URL("http://localhost:4444"),firefoxOptions);
                 break;
             case "edge":
                 WebDriverManager.edgedriver().setup();
-                EdgeOptions edgeOptions= new EdgeOptions();
-                edgeOptions.addArguments("start-maximized");
+              //  EdgeOptions edgeOptions= new EdgeOptions();
+             //   edgeOptions.addArguments("start-maximized");
                 driver=new EdgeDriver();
                // driver= new RemoteWebDriver(new URL("http://192.168.1.4:4444"),edgeOptions);
                 break;
